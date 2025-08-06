@@ -1,76 +1,78 @@
-💼 AI Interview Prep
-AI Interview Prep is a MERN stack application that helps users prepare for job interviews by creating custom sessions for a specific technology or role. Each session provides LLM-generated questions, along with their answers and detailed explanations, enabling users to learn, self-evaluate, and grow confidently.
+# 💼 AI Interview Prep
 
-✨ Key Features
-🎯 Create sessions based on selected technology or role (e.g., React, Node.js, Data Structures)
+AI Interview Prep is a MERN stack application that helps users prepare for job interviews by creating custom sessions for a specific **technology or role**. Each session provides **LLM-generated questions**, along with their **answers** and **detailed explanations**, enabling users to learn, self-evaluate, and grow confidently.
 
-🤖 AI-generated interview questions, along with ideal answers and explanations
+---
 
-🧠 Learn the "why" behind every answer with clear reasoning
+## ✨ Key Features
 
-📚 Multiple questions per session, mimicking real interview rounds
+- 🎯 **Create sessions** based on selected technology or role (e.g., React, Node.js, Data Structures)
+- 🤖 **AI-generated interview questions**, along with ideal answers and explanations
+- 🧠 Learn the "why" behind every answer with clear reasoning
+- 📚 Multiple questions per session, mimicking real interview rounds
+- 📝 Text-only interface — optimized for focus and learning
+- ⚡ Responsive, clean UI with smooth transitions
 
-📝 Text-only interface — optimized for focus and learning
+---
 
-⚡ Responsive, clean UI with smooth transitions
+## 🧱 Tech Stack (MERN)
 
-🧱 Tech Stack (MERN)
-Layer	Tech Used
-Frontend	React.js, Tailwind CSS, Zustand
-Backend	Node.js, Express.js
-Database	MongoDB (via Mongoose)
-AI Integration	Gemini / OpenAI LLM APIs
-Hosting	Vercel / Render / Netlify
+| Layer         | Tech Used                        |
+|---------------|----------------------------------|
+| **Frontend**  | React.js, Tailwind CSS, Zustand  |
+| **Backend**   | Node.js, Express.js              |
+| **Database**  | MongoDB (via Mongoose)           |
+| **AI Integration** | Gemini / OpenAI LLM APIs       |
+| **Hosting**   | Vercel / Render / Netlify        |
 
-📁 Project Structure
-bash
-Copy
-Edit
+---
+
+## 📁 Project Structure
+
 AI-Interview-Prep/
-├── backend/                     # Express.js server with LLM integration
-│   ├── routes/                  # API routes (e.g., /session, /questions)
-│   ├── controllers/             # Logic to handle requests
-│   └── services/aiService.js    # LLM communication logic
-├── frontend/ai-interview-prep/  # React client
-│   ├── components/              # Reusable UI elements
-│   ├── pages/                   # Interview session UI
-│   └── services/                # API calls to backend
+├── backend/ # Express.js server with LLM integration
+│ ├── routes/ # API routes (e.g., /session, /questions)
+│ ├── controllers/ # Logic to handle requests
+│ └── services/aiService.js # LLM communication logic
+├── frontend/ai-interview-prep/ # React client
+│ ├── components/ # Reusable UI elements
+│ ├── pages/ # Interview session UI
+│ └── services/ # API calls to backend
 └── README.md
-🚀 Getting Started
-🔧 Prerequisites
-Node.js and npm
 
-MongoDB URI (e.g. Atlas)
 
-Gemini or OpenAI API key
+---
 
-📦 Backend Setup
-bash
-Copy
-Edit
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+- Node.js and npm
+- MongoDB URI (e.g. MongoDB Atlas)
+- Gemini or OpenAI API key
+
+---
+
+### 📦 Backend Setup
+
+```bash
 cd backend
 npm install
-Create a .env file:
 
-ini
-Copy
-Edit
-PORT=5000
+PORT=8080
 MONGO_URI=your_mongo_connection_string
-AI_API_KEY=your_gemini_or_openai_key
-Start the backend server:
+GEMINI_API_KEY=your_gemini_or_openai_key
 
-bash
-Copy
-Edit
 npm run dev
+```
+
 🌐 Frontend Setup
-bash
-Copy
-Edit
+```bash
 cd ../frontend/ai-interview-prep
 npm install
 npm run dev
+```
+
 🧪 How It Works
 User selects a technology/topic to create a session.
 
@@ -102,4 +104,3 @@ Commit changes: git commit -m "Add your feature"
 Push to your branch: git push origin feature/your-feature-name
 
 Create a Pull Request
-
