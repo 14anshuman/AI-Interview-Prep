@@ -27,18 +27,7 @@ AI Interview Prep is a MERN stack application that helps users prepare for job i
 
 ---
 
-AI-Interview-Prep/
-├── backend/                        # Express.js server with LLM integration
-│   ├── routes/                     # API routes (e.g., /session, /questions)
-│   ├── controllers/                # Logic to handle requests
-│   └── services/aiService.js       # LLM communication logic
-│
-├── frontend/ai-interview-prep/     # React client
-│   ├── components/                 # Reusable UI elements
-│   ├── pages/                      # Interview session UI
-│   └── services/                   # API calls to backend
-│
-└── README.md                       # Project documentation
+<pre> ```bash AI-Interview-Prep/ ├── backend/ # Express.js server with LLM integration │ ├── routes/ # API routes (e.g., /session, /questions) │ ├── controllers/ # Logic to handle requests │ └── services/aiService.js # LLM communication logic │ ├── frontend/ai-interview-prep/ # React client │ ├── components/ # Reusable UI elements │ ├── pages/ # Interview session UI │ └── services/ # API calls to backend │ └── README.md # Project documentation ``` </pre>
 
 
 
